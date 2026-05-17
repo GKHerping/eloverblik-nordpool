@@ -3,11 +3,11 @@
   "name": "Eloverblik Nordpool Integration",
   "after_dependencies": ["recorder"],
   "codeowners": ["@GKHerping"],
-  "config_flow": true
+  "config_flow": true,
   "dependencies": ["nordpool"],
   "documentation": "https://github.com/GKHerping/eloverblik-nordpool/blob/main/README.md",
   "iot_class": "cloud_polling",
   "issue_tracker": "https://github.com/GKHerping/eloverblik-nordpool/issues",
   "requirements": [],
-  "version": "1.0.0",
+  "version": "1.0.0"
 }
