@@ -1,0 +1,12 @@
+{
+  "domain": "eloverblik_nordpool",
+  "name": "Eloverblik Nordpool Integration",
+  "codeowners": ["GKHerping"],
+  "documentation": "https://github.com/GKHerping/eloverblik-nordpool/blob/main/README.md",
+  "issue_tracker": "https://github.com/GKHerping/eloverblik-nordpool/issues",
+  "requirements": [],
+  "dependencies": ["nordpool"],
+  "iot_class": "cloud_polling",
+  "version": "1.0.0",
+  "config_flow": true
+}
