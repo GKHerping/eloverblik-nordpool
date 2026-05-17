@@ -9,12 +9,15 @@ on:
 
 permissions: {}
 
+env:
+  FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
+  
 jobs:
   hassfest:
     runs-on: "ubuntu-latest"
     steps:
       - name: Checkout
-        uses: "actions/checkout@v4"
+        uses: "actions/checkout@v4.2.2"
 
       - name: "Hassfest validation"
         uses: "home-assistant/actions/hassfest@master"
