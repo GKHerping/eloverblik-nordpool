@@ -6,7 +6,7 @@ Combines Eloverblik hourly consumption data with Nord Pool spot prices to create
 - Direct Energy Dashboard support (consumption + cost entities)
 
 ## Installation
-1. HACS → Integrations → Add repository → `YOUR_GITHUB_USERNAME/eloverblik-nordpool`
+1. HACS → Integrations → Add repository → `GKHerping/eloverblik-nordpool`
 2. Restart Home Assistant
 3. Configuration → Integrations → Add "Eloverblik Nordpool Integration"
 
