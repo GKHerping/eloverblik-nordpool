@@ -14,6 +14,7 @@ from homeassistant.helpers.update_coordinator import DataUpdateCoordinator, Upda
 from homeassistant.components.recorder import get_instance
 from homeassistant.components.recorder.models import StatisticData, StatisticMetaData, StatisticMeanType
 from homeassistant.components.recorder.statistics import (
+    STATISTIC_UNIT_TO_UNIT_CONVERTER,
     async_add_external_statistics,
     get_last_statistics,
 )
@@ -443,6 +444,7 @@ class EloverblikCoordinator(DataUpdateCoordinator):
     def _make_metadata(
         self, stat_id: str, name: str, unit: str
     ) -> StatisticMetaData:
+        converter = STATISTIC_UNIT_TO_UNIT_CONVERTER.get(unit)
         return StatisticMetaData(
             has_mean=False,
             has_sum=True,
@@ -450,6 +452,7 @@ class EloverblikCoordinator(DataUpdateCoordinator):
             name=name,
             source=DOMAIN,
             statistic_id=stat_id,
+            unit_class=converter.UNIT_CLASS if converter else None,
             unit_of_measurement=unit,
         )
 
