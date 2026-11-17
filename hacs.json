@@ -2,5 +2,6 @@
   "name": "Eloverblik Nordpool Integration",
   "country": ["DK"],
   "content_in_root": false,
-  "render_readme": true
+  "render_readme": true,
+  "homeassistant": "2025.11.0"
 }
